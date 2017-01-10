@@ -16,8 +16,6 @@ ActiveRecord::Schema.define(version: 20170108064735) do
     t.string "name"
     t.string "email"
     t.text   "comments"
-    t.datetime "create_at", null: false
-    t.datetime "update_at", null: false
   end
 
 end
