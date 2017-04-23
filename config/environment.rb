@@ -4,6 +4,7 @@ require_relative 'application'
 # Initialize the Rails application.
 Rails.application.initialize!
 
+=begin commented out code so the server can run 
 ActionMailer::Base.smtp_settings = {
     :port => EVN['MAILGUN_SMTP_PORT'],
     :address => ENV['MAILGUN_SMTP_SERVER'],
@@ -13,3 +14,4 @@ ActionMailer::Base.smtp_settings = {
     :authentication => :plain,
 }
 ActionMailer::Base.delivery_method = :smtp
+=end
